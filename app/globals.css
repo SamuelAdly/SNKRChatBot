@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #111827 rgba(0, 0, 0, 0.1);
+}
+
