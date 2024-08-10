@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import ReactMarkdown from 'react-markdown';
 
 export default function Home() {
   const [messages, setMessages] = useState([]);
@@ -105,7 +106,7 @@ export default function Home() {
                   : `${primary} ${text}`
               }`}
             >
-              {msg.text}
+               <ReactMarkdown>{msg.text}</ReactMarkdown>
             </span>
             <p className={`text-xs ${text} mt-2`}>
               {msg.role === "bot" ? "Bot" : "You"} -{" "}
